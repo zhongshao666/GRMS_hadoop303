@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE mapping [
+        <!ELEMENT mapping (table+)>
+        <!ELEMENT table (column+)>
+        <!ELEMENT column ANY>
+        <!--!ELEMENT column (#PCDATA)-->
+        <!ATTLIST column property CDATA #REQUIRED
+                column CDATA #REQUIRED>
+        ]>
+<mapping>
+    <table>
+        <column property="a" column="b"></column>
+        <column property="c" column="d"></column>
+    </table>
+</mapping>

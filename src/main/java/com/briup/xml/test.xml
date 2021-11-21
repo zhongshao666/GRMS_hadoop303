@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE root [
+        <!ELEMENT root (#PCDATA)>
+        <!ATTLIST root id  ID #REQUIRED
+                age CDATA #IMPLIED
+                gender (男|女) "男"
+                add CDATA "kunSan"
+                class CDATA #FIXED "bd2005"
+                >
+        ]>
+        <!--
+        PCDATA 该内容模型说明元素中可以同时出现文本和元素
+        FIXED-固定值
+        IMPLIED-可有可无
+        REQUIRED-必须有
+        CDATA 任意字符
+        -->
+
+<root id="a1" age="" gender="女" add="" class="bd2005">
+
+</root>
